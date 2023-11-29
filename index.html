@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sexuality Analyzer</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap">
+    <style>
+        body {
+            font-family: 'Pacifico', cursive;
+            text-align: center;
+            margin: 20px;
+            background: linear-gradient(to right, #e40303, #ff8c00, #ffed00, #008026, #004dff, #750787, #ba00ff);
+            color: black; /* Changed text color to black */
+        }
+
+        #inputForm {
+            max-width: 400px;
+            margin: auto;
+            background: rgba(255, 255, 255, 0.7);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        @media screen and (max-width: 600px) {
+            /* Adjust styles for smaller screens */
+            #inputForm {
+                max-width: 90%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Know Your Rainbow</h1>
+    <div id="inputForm">
+        <label for="name">Enter Your Name with Pride:</label>
+        <input type="text" id="name" placeholder="Your Name">
+        <br>
+        <button onclick="analyzeSexuality()">Analyze</button>
+    </div>
+
+    <script>
+        function analyzeSexuality() {
+            var name = document.getElementById('name').value.toLowerCase();
+            var sexuality;
+
+            // Check for specific names
+            if (name === 'varad') {
+                alert("Sorry, Varad is straighter than you.");
+                return;
+            } else if (name === 'atharv') {
+                alert("Sorry, Atharv is straight.");
+                return;
+            } else if (name === 'aniket') {
+                alert("Sorry, Aniket is straight.");
+                return;
+            }
+
+            // Check the last character of the name
+            var lastChar = name.charAt(name.length - 1);
+
+            if (lastChar === 'a' || lastChar === 'i') {
+                sexuality = 'Lesbian';
+            } else {
+                sexuality = 'Gay';
+            }
+
+            var number = Math.floor(Math.random() * 100) + 1;
+            alert(name + " is " + number + "% " + sexuality + ". Don't worry, the community is with you. Now go ahead and find a partner for you!");
+        }
+    </script>
+</body>
+</html>
