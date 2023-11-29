@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sexuality Result</title>
+    <style>
+        body {
+            font-family: 'Pacifico', cursive;
+            text-align: center;
+            margin: 20px;
+            background: linear-gradient(to right, #e40303, #ff8c00, #ffed00, #008026, #004dff, #750787, #ba00ff);
+            color: black; /* Changed text color to black */
+        }
+
+        #resultContainer {
+            max-width: 600px;
+            margin: auto;
+            background: rgba(255, 255, 255, 0.7);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+    </style>
+</head>
+<body>
+    <div id="resultContainer">
+        <h1>Result</h1>
+        <p>
+            <?php
+                // Use PHP to retrieve and display the result
+                echo urldecode($_GET['result']);
+            ?>
+        </p>
+    </div>
+</body>
+</html>
