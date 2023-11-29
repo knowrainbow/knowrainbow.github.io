@@ -50,7 +50,7 @@
 <body>
     <h1>Know Your Rainbow</h1>
     <div id="inputForm">
-        <label for="name">Enter Your Name with Pride:</label>
+        <label for="name">Enter Your First Name with Pride:</label>
         <input type="text" id="name" placeholder="Your Name">
         <br>
         <button onclick="analyzeSexuality()">Analyze</button>
@@ -74,13 +74,17 @@
             } else if (name === 'sharvari' || name === 'Sharvari' || name === 'sharvari ' || name === 'Sharvari ') {
                 alert("YOU LIGHT UP MY WORLD LIKE NOBODY ELSE!");
                 return;
+            } else if (name === 'ketal' || name === 'Ketal' || name === 'ketal ' || name === 'Ketal ') {
+                alert("YOU LIGHT UP MY WORLD LIKE NOBODY ELSE!");
+                return;
             }
+
 
 
             // Check the last character of the name
             var lastChar = name.charAt(name.length - 1);
 
-            if (lastChar === 'a' || lastChar === 'i' || name === 'ketal' || name === 'Ketal' || lastChar === 'e') {
+            if (lastChar === 'a' || lastChar === 'i' || lastChar === 'e') {
                 sexuality = 'Lesbian';
             } else {
                 sexuality = 'Gay';
