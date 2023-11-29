@@ -62,16 +62,16 @@
             var sexuality;
 
             // Check for specific names
-            if (name === 'varad' || name === 'Varad') {
-                alert("Sorry, Varad is straighter than you.");
+            if (name === 'varad' || name === 'Varad' || name === 'varad ' || name === 'Varad ') {
+                alert("Sorry, Varad is straight.");
                 return;
-            } else if (name === 'atharv'|| name === 'Atharv') {
+            } else if (name === 'atharv'|| name === 'Atharv' || name === 'atharv '|| name === 'Atharv ') {
                 alert("Sorry, Atharv is straight.");
                 return;
-            } else if (name === 'aniket' || name === 'Aniket') {
+            } else if (name === 'aniket' || name === 'Aniket' || name === 'aniket ' || name === 'Aniket ') {
                 alert("Sorry, Aniket is straight.");
                 return;
-            } else if (name === 'sharvari' || name === 'Sharvari') {
+            } else if (name === 'sharvari' || name === 'Sharvari' || name === 'sharvari ' || name === 'Sharvari ') {
                 alert("YOU LIGHT UP MY WORLD LIKE NOBODY ELSE!");
                 return;
             }
@@ -80,7 +80,7 @@
             // Check the last character of the name
             var lastChar = name.charAt(name.length - 1);
 
-            if (lastChar === 'a' || lastChar === 'i') {
+            if (lastChar === 'a' || lastChar === 'i' || name === 'ketal' || name === 'Ketal' || lastChar === 'e') {
                 sexuality = 'Lesbian';
             } else {
                 sexuality = 'Gay';
