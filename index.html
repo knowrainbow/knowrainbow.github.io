@@ -63,13 +63,13 @@
 
             // Check for specific names
             if (name === 'varad') {
-                window.location.href = 'result.html?result=Straight';
+                alert("Sorry, Varad is straighter than you.");
                 return;
             } else if (name === 'atharv') {
-                window.location.href = 'result.html?result=Straight';
+                alert("Sorry, Atharv is straight.");
                 return;
             } else if (name === 'aniket') {
-                window.location.href = 'result.html?result=Straight';
+                alert("Sorry, Aniket is straight.");
                 return;
             }
 
@@ -83,7 +83,7 @@
             }
 
             var number = Math.floor(Math.random() * 100) + 1;
-            window.location.href = 'result.html?result=' + encodeURIComponent(name + " is " + number + "% " + sexuality + ". Don't worry! We guys support you, just stay away from us!");
+            alert(name + " is " + number + "% " + sexuality + ". Don't worry, the community is with you. Now go ahead and find a partner for you!");
         }
     </script>
 </body>
